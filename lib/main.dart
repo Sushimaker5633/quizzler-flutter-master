@@ -69,6 +69,9 @@ class _QuizPageState extends State<QuizPage> {
               ),
               onPressed: () {
                 //The user picked true.
+                scoreKeeper.add(
+                  Icon(Icons.check, color: Colors.green,),
+                );
                 setState(() {
                   questionNumber++;
                 });
